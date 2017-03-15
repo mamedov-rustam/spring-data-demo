@@ -2,9 +2,11 @@ package com.example.repository;
 
 
 import com.example.domain.User;
+import org.springframework.data.repository.RepositoryDefinition;
 
 import java.util.List;
 
+@RepositoryDefinition(domainClass = User.class, idClass = Long.class)
 public interface UserRepository {
     // Read
     User findByUsername(String username);
