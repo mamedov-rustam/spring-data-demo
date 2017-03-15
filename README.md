@@ -14,7 +14,7 @@
 
 *Also see [presentation](https://goo.gl/UfAuvx)
 
-#References
+# References
 1. [Spring Data JPA reference documentation](https://goo.gl/PklOkI)
 2. [Евгений Борисов — Spring Data? Да, та!](https://youtu.be/nwM7A4TwU3M)
 3. [This repository](https://goo.gl/WOlQ0W) contains example projects for the different Spring Data modules to showcase the API and how to use the features provided by the modules.
