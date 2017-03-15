@@ -1,16 +1,16 @@
 # Steps for demo (branches)
 
-**Step 1** - JPA CRUD repository implementation
+**[Step 1](https://github.com/mamedov-rustam/spring-data-demo/tree/step-1)** - JPA CRUD repository implementation
 
-**Step 2** - rewrite *Step-1* with Spring Data JPA
+**[Step 2](https://github.com/mamedov-rustam/spring-data-demo/tree/step-2)** - rewrite *Step-1* with Spring Data JPA
 
-**Step 3** - added pagination support for repository
+**[Step 3](https://github.com/mamedov-rustam/spring-data-demo/tree/step-3)** - added pagination support for repository
 
-**Step 4** - added projections
+**[Step 4](https://github.com/mamedov-rustam/spring-data-demo/tree/step-4)** - added projections
 
-**Step 5** - added custom repository implementation
+**[Step 5](https://github.com/mamedov-rustam/spring-data-demo/tree/step-5)** - added custom repository implementation
 
-**Step 6** - extend repository with *QueryByExample*
+**[Step 6](https://github.com/mamedov-rustam/spring-data-demo/tree/step-6)** - extend repository with *QueryByExample*
 
 *Also see [presentation](https://goo.gl/UfAuvx)
 
