@@ -21,10 +21,16 @@ public class User implements Serializable {
     private String email;
     private String password;
     private String username;
+    private Boolean isActive;
 
-    public User(String email, String password, String username) {
+    public User(String email, String password, String username, Boolean isActive) {
         this.email = email;
         this.password = password;
         this.username = username;
+        this.isActive = isActive;
+    }
+
+    public User(String email, String password, String username) {
+        this(email, password, username, true);
     }
 }

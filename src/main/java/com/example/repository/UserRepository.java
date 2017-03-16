@@ -1,28 +1,21 @@
 package com.example.repository;
 
-
 import com.example.domain.User;
-import org.springframework.data.repository.RepositoryDefinition;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
 
-@RepositoryDefinition(domainClass = User.class, idClass = Long.class)
-public interface UserRepository {
-    // Read
+public interface UserRepository extends PagingAndSortingRepository<User, Long> {
+
     User findByUsername(String username);
 
     List<User> findAll();
 
-    User findOne(Long id);
+    @Query("from User u where u.isActive = true")
+    Page<User> findAllActive(Pageable pageable);
 
-    // Create + Update
-    User save(User user);
-
-    // Delete
-    void delete(User user);
-
-    // Additional
-    long count();
-
-    void deleteAll();
+    Page<User> findAllByIsActiveTrue(Pageable pageable);
 }
