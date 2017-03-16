@@ -22,7 +22,7 @@ import static java.util.Arrays.asList;
 @Transactional
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserRepositoryTest {
+public class CrudUserRepositoryTest {
     @PersistenceContext
     private EntityManager em;
     @Autowired
@@ -36,11 +36,6 @@ public class UserRepositoryTest {
                 new User("funny_boobs@mail.ru", "sdfsdf", "John Snow"),
                 new User("littlepig77@mail.ru", "qweqwe", "Gomer Simpson")
         ).forEach(em::persist);
-    }
-
-    @After
-    public void cleanUp() {
-        em.createQuery("DELETE FROM User").executeUpdate();
     }
 
     @Test
