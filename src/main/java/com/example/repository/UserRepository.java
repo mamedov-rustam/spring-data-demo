@@ -14,7 +14,7 @@ public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
     List<User> findAll();
 
-    @Query("from User u where u.isActive = true")
+    @Query("select u from User as u where u.isActive = true")
     Page<User> findAllActive(Pageable pageable);
 
     Page<User> findAllByIsActiveTrue(Pageable pageable);
