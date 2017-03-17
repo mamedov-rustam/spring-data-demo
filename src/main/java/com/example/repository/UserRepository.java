@@ -1,6 +1,7 @@
 package com.example.repository;
 
 import com.example.domain.User;
+import com.example.domain.UserCredentials;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
@@ -14,8 +15,13 @@ public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
     List<User> findAll();
 
-    @Query("from User u where u.isActive = true")
+    @Query("select u from User as u where u.isActive = true")
     Page<User> findAllActive(Pageable pageable);
 
     Page<User> findAllByIsActiveTrue(Pageable pageable);
+
+    UserCredentials findCredentialsByUsername(String username);
+
+    @Query("select u from User as u")
+    List<UserCredentials> findAllCredentials();
 }
