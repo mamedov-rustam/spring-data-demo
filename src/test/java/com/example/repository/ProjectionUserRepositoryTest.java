@@ -1,7 +1,7 @@
 package com.example.repository;
 
 import com.example.domain.User;
-import com.example.domain.UserCredentials;
+import com.example.dto.UserCredentials;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import lombok.SneakyThrows;

@@ -1,7 +1,7 @@
 package com.example.repository;
 
 import com.example.domain.User;
-import com.example.domain.UserCredentials;
+import com.example.dto.UserCredentials;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
