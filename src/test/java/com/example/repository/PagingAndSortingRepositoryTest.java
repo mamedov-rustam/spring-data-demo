@@ -65,7 +65,7 @@ public class PagingAndSortingRepositoryTest {
     @SneakyThrows
     public void logFirstPageWithActiveUsersViaQuery() {
         PageRequest pageRequest = new PageRequest(0, 3);
-        Page<User> page = userRepository.findAllActive(pageRequest);
+        Page<User> page = userRepository.findByIsActiveTrue(pageRequest);
         log.info("\n" + WRITER.writeValueAsString(page));
     }
 
