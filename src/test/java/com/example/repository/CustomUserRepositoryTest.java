@@ -52,6 +52,6 @@ public class CustomUserRepositoryTest {
     @SneakyThrows
     public void logRandomUser() {
         User user = userRepository.findRandomUser();
-        log.info(WRITER.writeValueAsString(user));
+        log.info("\n" + WRITER.writeValueAsString(user));
     }
 }
