@@ -1,7 +1,9 @@
-package com.example.repository;
+package com.example.repository.impl;
 
 
 import com.example.domain.User;
+import com.example.repository.CustomUserRepository;
+import com.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.EntityManager;
